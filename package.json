@@ -1,17 +1,18 @@
 {
-  "name": "elm-webpack-starter",
-  "description": "Webpack setup for writing Elm apps",
-  "version": "0.8.4",
+  "name": "elm-store-example",
+  "description": "Example app featuring Elm Store pattern",
+  "version": "0.0.1",
   "license": "MIT",
-  "author": "Peter Morawiec",
+  "author": "Drew Trafton",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moarwick/elm-webpack-starter"
+    "url": "https://github.com/Dtraft/elm-store-example"
   },
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
     "build": "rimraf dist && webpack && mv dist/*.eot dist/static/css/ && mv dist/*.woff* dist/static/css/ && mv dist/*.svg dist/static/css/ && mv dist/*.ttf dist/static/css/",
-    "reinstall": "npm i rimraf && rimraf node_modules && npm uninstall -g elm && npm i -g elm && npm i && elm package install"
+    "reinstall": "npm i rimraf && rimraf node_modules && npm uninstall -g elm && npm i -g elm && npm i && elm package install",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -22,6 +23,7 @@
     "elm-webpack-loader": "^4.1.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
+    "gh-pages": "^0.12.0",
     "html-webpack-plugin": "^2.17.0",
     "jquery": "^3.1.0",
     "node-sass": "^4.2.0",
