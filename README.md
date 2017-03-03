@@ -9,6 +9,8 @@ That being said, at it's heart, this structure has a strange paradox.  While the
 
 In this example, I've tried to replicate all the things that make that pattern powerful within the framework of the Elm Architecture. This is heavily inspired by Rob Ashton's [excellent article](http://codeofrob.com/entries/a-few-notes-on-elm-0.17---composing-applications.html) on Composing Applications in Elm.
 
+You can see it live here: [https://dtraft.github.io/elm-store-example/](https://dtraft.github.io/elm-store-example/)
+
 Pull requests, feedback, and suggestions welcome!
 
 
